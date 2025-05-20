@@ -1,0 +1,51 @@
+.ms-bg-body{
+    background-color: #383737;
+    color: white;
+}
+
+.ms-img-card{
+    
+    width: 600px;
+}
+
+
+.ms-container{
+    width: 1900px;
+    max-width: 800px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.ms-card{
+    border-radius: 8px;
+    border: 2px solid rgb(32, 32, 32);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 600px;
+    height: 280px;
+    transition: 300ms;
+}
+
+.ms-card:hover{
+    transform: scale(1.02);
+}
+
+/* .ms-card:hover .ms-img-card{
+display: none;
+} */
+
+.ms-info{
+    position: absolute;
+    width: 600px;
+    height: 280px;
+    background: #0000005d;
+    display: none;
+    backdrop-filter: blur(2px);
+    padding: 100px ;
+    text-align: center;
+}
+
+.ms-card:hover .ms-info{
+display:block;
+}
+
