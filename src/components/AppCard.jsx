@@ -1,4 +1,4 @@
-import VideogameDetail from "../pages/VideogameDetail";
+
 
 const AppCard =({videogame}) =>{
 

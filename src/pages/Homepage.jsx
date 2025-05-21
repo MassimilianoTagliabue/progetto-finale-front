@@ -11,7 +11,7 @@ function Homepage() {
 
     // Filtra i videogiochi in base alla ricerca
     const filter = videogame.filter((game) =>
-    game.title.toLowerCase().includes(search.toLowerCase())
+        game.title.toLowerCase().includes(search.toLowerCase())
     );
 
     return (
@@ -19,7 +19,7 @@ function Homepage() {
             <div className="mt-3 d-flex justify-content-end">
                 <form className="d-flex col-4 mx-4" data-bs-theme="dark" role="search" onSubmit={(e) => e.preventDefault()} >
                     <input className="form-control me-2" type="text" name="title" placeholder="Search" aria-label="Search"
-                        autoComplete="off" value={search} onChange={(event) => setSearch(event.target.value)}/>
+                        autoComplete="off" value={search} onChange={(event) => setSearch(event.target.value)} />
                     <button className="btn btn-success" type="submit">Search</button>
                 </form>
             </div>
@@ -49,9 +49,9 @@ function Homepage() {
                     </>
 
                 ) : (
-                    <p>
-                        nessun videogame presente
-                    </p>
+                    <div class="alert alert-light" role="alert">
+                        Nessun videogioco presente al momento
+                    </div>
                 )}
             </div>
         </>

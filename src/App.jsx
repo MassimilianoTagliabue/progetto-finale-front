@@ -5,6 +5,7 @@ import GlobalContext from "./contexts/GlobalContext"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import VideogameDetail from "./pages/VideogameDetail"
+import NotFound from "./pages/NotFound"
 
 
 const apiUrl = import.meta.env.VITE_API_URL;
@@ -45,6 +46,7 @@ function App() {
                 <Route path=":id" element={<VideogameDetail/>}/>
 
               </Route>
+              <Route path="*" element={<NotFound/>}/>
             </Route>  
           </Routes>
         </BrowserRouter>
